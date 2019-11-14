@@ -1,0 +1,15 @@
+{
+  "name": "react-lazyload",
+  "version": "1.0.0",
+  "description": " a react component that lighter and more personalized",
+  "main": "dist/index.js",
+  "repository": "git@github.com:xkplty/react-lazyload.git",
+  "author": "pengli",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-component",
+    "lazyload",
+    "typescript"
+  ]
+}
