@@ -11,5 +11,8 @@
     "react-component",
     "lazyload",
     "typescript"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
 }
