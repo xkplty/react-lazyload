@@ -1,12 +1,12 @@
-const style = (element: HTMLElement, prop: any) =>
+const style = (element: HTMLElement, prop: any): string =>
   typeof getComputedStyle !== 'undefined'
     ? getComputedStyle(element, null).getPropertyValue(prop)
     : element.style[prop];
 
-const overflow = (element: HTMLElement) =>
+const overflow = (element: HTMLElement): string =>
   style(element, 'overflow') + style(element, 'overflow-y') + style(element, 'overflow-x');
 
-const getScrollParent = (element: HTMLElement | undefined) => {
+const getScrollParent = (element: Element | Text | null): HTMLElement | Window => {
   if (!(element instanceof HTMLElement)) {
     return window;
   }
