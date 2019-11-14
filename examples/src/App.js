@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import LazyLoad from '../../src/index';
 import './App.css';
 
 function App() {
+  let arr = new Array(10000).fill(1);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        arr.map((item, index) => (
+          <LazyLoad
+            throttle={250}
+            offsetVertical={100}
+          >
+            <div>{index}</div>
+          </LazyLoad>
+        ))
+      }
     </div>
   );
 }

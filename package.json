@@ -12,6 +12,8 @@
     "lazyload",
     "typescript"
   ],
+  "scripts": {
+  },
   "devDependencies": {
     "@types/lodash": "^4.14.147",
     "@types/react": "^16.9.11",
