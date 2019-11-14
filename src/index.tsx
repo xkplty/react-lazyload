@@ -1,3 +1,5 @@
+/// <reference path="../interface/global.d.ts" />
+
 import React, { Children, Component, ReactNode } from 'react';
 import { findDOMNode } from 'react-dom';
 import { add, remove } from 'eventlistener';

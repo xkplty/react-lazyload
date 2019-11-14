@@ -13,9 +13,6 @@
     "typescript"
   ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w",
-    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.147",
