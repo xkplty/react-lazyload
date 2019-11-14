@@ -1,0 +1,1 @@
+{"version":3,"file":"getElementPosition.js","sourceRoot":"","sources":["../../src/lib/getElementPosition.ts"],"names":[],"mappings":";;AASA,SAAwB,kBAAkB,CAAC,OAAoB;IAC7D,IAAM,IAAI,GAAG,OAAO,CAAC,qBAAqB,EAAE,CAAC;IAE7C,OAAO;QACL,GAAG,EAAE,IAAI,CAAC,GAAG,GAAG,MAAM,CAAC,WAAW;QAClC,IAAI,EAAE,IAAI,CAAC,IAAI,GAAG,MAAM,CAAC,WAAW;KACrC,CAAC;AACJ,CAAC;AAPD,qCAOC"}

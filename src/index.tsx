@@ -2,8 +2,8 @@ import React, { Children, Component, ReactNode } from 'react';
 import { findDOMNode } from 'react-dom';
 import { add, remove } from 'eventlistener';
 import { debounce, throttle } from 'lodash';
-import getScrollParent from '../lib/getScrollParent';
-import isInViewport from '../lib/isInViewport';
+import getScrollParent from './lib/getScrollParent';
+import isInViewport from './lib/isInViewport';
 
 type LazyLoadProps = {
   children: ReactNode
