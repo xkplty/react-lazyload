@@ -12,15 +12,20 @@
     "lazyload",
     "typescript"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
   "devDependencies": {
     "@types/lodash": "^4.14.147",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.4",
-    "babel-loader": "^8.0.6",
-    "ts-loader": "^6.2.1",
+    "rollup": "^1.27.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-watch": "^4.3.1",
+    "tslib": "^1.10.0",
     "typescript": "^3.7.2",
-    "webpack": "^4.41.2"
+    "typings": "^2.1.1"
   },
   "dependencies": {
     "eventlistener": "^0.0.1",
