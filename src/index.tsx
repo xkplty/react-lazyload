@@ -1,9 +1,8 @@
-/// <reference path="../interface/global.d.ts" />
-
 import React, { Children, Component, ReactNode } from 'react';
 import { findDOMNode } from 'react-dom';
-import { add, remove } from 'eventlistener';
-import { debounce, throttle } from 'lodash';
+import debounce from 'lodash.debounce';
+import throttle from 'lodash.throttle';
+import { add, remove } from './lib/eventlistener';
 import getScrollParent from './lib/getScrollParent';
 import isInViewport from './lib/isInViewport';
 
