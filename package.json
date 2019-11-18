@@ -13,7 +13,9 @@
     "typescript"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "yarn build:dev && yarn build:pro",
+    "build:dev": "rollup --config rollup.config.dev.js",
+    "build:pro": "rollup --config rollup.config.prod.js",
     "watch": "rollup -cw"
   },
   "devDependencies": {

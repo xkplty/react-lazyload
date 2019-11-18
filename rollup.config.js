@@ -1,12 +1,10 @@
-import typescript from 'rollup-plugin-typescript'
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs';
-import { uglify } from "rollup-plugin-uglify";
+const typescript = require('rollup-plugin-typescript')
+const resolve = require('rollup-plugin-node-resolve')
+const commonjs = require('rollup-plugin-commonjs')
 
-export default {
+module.exports = {
   input: './src/index.tsx',
   output: {
-    file: './lib/react-lazyload.js',
     format: 'cjs',
     sourcemap: true
   },
@@ -14,7 +12,6 @@ export default {
   plugins: [
     typescript(),
     resolve(),
-    commonjs(),
-    uglify()
+    commonjs()
   ]
 }
